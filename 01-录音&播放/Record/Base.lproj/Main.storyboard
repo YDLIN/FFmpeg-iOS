@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record &amp; Play PCM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aze-RW-57M">
+                                <rect key="frame" x="30" y="74" width="330" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3V-kI-tjZ">
+                                <rect key="frame" x="50" y="154" width="130" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Mkz-dk-UJx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Record">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="recordDidClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7gs-A2-Tfr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1J7-YK-Jzp">
+                                <rect key="frame" x="210" y="154" width="130" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="iVL-Ti-d3u"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Play">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="playDidClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4aI-hl-3z8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l3V-kI-tjZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="1V1-Ei-mmX"/>
+                            <constraint firstItem="1J7-YK-Jzp" firstAttribute="height" secondItem="l3V-kI-tjZ" secondAttribute="height" id="87d-dK-4RU"/>
+                            <constraint firstItem="Aze-RW-57M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="AUv-L2-aHL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1J7-YK-Jzp" secondAttribute="trailing" constant="50" id="B4c-Nm-Kgm"/>
+                            <constraint firstItem="l3V-kI-tjZ" firstAttribute="top" secondItem="Aze-RW-57M" secondAttribute="bottom" constant="50" id="H4J-w0-LvE"/>
+                            <constraint firstItem="1J7-YK-Jzp" firstAttribute="leading" secondItem="l3V-kI-tjZ" secondAttribute="trailing" constant="30" id="OFV-6X-Sgh"/>
+                            <constraint firstItem="1J7-YK-Jzp" firstAttribute="top" secondItem="l3V-kI-tjZ" secondAttribute="top" id="R0D-mU-eB3"/>
+                            <constraint firstItem="1J7-YK-Jzp" firstAttribute="width" secondItem="l3V-kI-tjZ" secondAttribute="width" id="Uyb-wV-wFF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Aze-RW-57M" secondAttribute="trailing" constant="30" id="W9s-So-lsq"/>
+                            <constraint firstItem="Aze-RW-57M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="u0a-gH-wLC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playBtn" destination="1J7-YK-Jzp" id="X0w-uW-4Qe"/>
+                        <outlet property="recordBtn" destination="l3V-kI-tjZ" id="Xb6-sJ-p43"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.153846153846153" y="47.630331753554501"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
