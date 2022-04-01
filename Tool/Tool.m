@@ -182,4 +182,15 @@
         return ;
     }
 }
+
++ (void)fileSizeIn:(NSString *)path {
+    if (path.length == 0) {
+        NSLog(@"path is empty");
+        return;
+    }
+    NSFileManager* manager = [NSFileManager defaultManager];
+    if ([manager fileExistsAtPath:path]) {
+        NSLog(@"File size: %llu bytes", [[manager attributesOfItemAtPath:path error:nil] fileSize]);
+    }
+}
 @end

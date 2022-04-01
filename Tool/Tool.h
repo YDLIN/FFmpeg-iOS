@@ -46,6 +46,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)showSpec:(AVFormatContext *)ctx;
 /// 获取设备参数
 + (void)showDeviceInfo;
+/// 打印文件大小
++ (void)fileSizeIn:(NSString *)path;
 @end
 
 NS_ASSUME_NONNULL_END
