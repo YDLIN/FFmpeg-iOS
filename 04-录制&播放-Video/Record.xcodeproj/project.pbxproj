@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8105D57227F54C98004A42B7 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 8105D57027F54C98004A42B7 /* lib */; };
-		8105D57327F54C98004A42B7 /* include in Resources */ = {isa = PBXBuildFile; fileRef = 8105D57127F54C98004A42B7 /* include */; };
-		8105D59227F5E3E7004A42B7 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8105D59027F5E3E7004A42B7 /* Tool.m */; };
+		8105D5B627F7E2AE004A42B7 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8105D5B527F7E2AE004A42B7 /* Tool.m */; };
 		811E614127C3CDC80036F285 /* RecordUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E614027C3CDC80036F285 /* RecordUtil.m */; };
-		811E614427C3CDD30036F285 /* PlayUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E614327C3CDD30036F285 /* PlayUtil.m */; };
 		8126964D27C0A3EC00E7D8F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8126964C27C0A3EC00E7D8F8 /* AppDelegate.m */; };
 		8126965027C0A3EC00E7D8F8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8126964F27C0A3EC00E7D8F8 /* SceneDelegate.m */; };
 		8126965327C0A3EC00E7D8F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8126965227C0A3EC00E7D8F8 /* ViewController.m */; };
@@ -33,17 +30,19 @@
 		8126968F27C0CE8300E7D8F8 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8126968E27C0CE8300E7D8F8 /* libavutil.a */; };
 		8126969127C0CE8600E7D8F8 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8126969027C0CE8600E7D8F8 /* libswresample.a */; };
 		8126969327C0CE8900E7D8F8 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8126969227C0CE8900E7D8F8 /* libswscale.a */; };
+		815E8A5A27F94D760004D542 /* include in Resources */ = {isa = PBXBuildFile; fileRef = 815E8A5827F94D760004D542 /* include */; };
+		815E8A5B27F94D760004D542 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 815E8A5927F94D760004D542 /* lib */; };
+		815E8A5F27F94E480004D542 /* drawYUVFragment.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 815E8A5D27F94E480004D542 /* drawYUVFragment.fsh */; };
+		815E8A6027F94E480004D542 /* drawYUVVertex.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 815E8A5E27F94E480004D542 /* drawYUVVertex.vsh */; };
+		815E8A6327F94E540004D542 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 815E8A6227F94E540004D542 /* EAGLView.m */; };
+		815E8A6627F94E5D0004D542 /* DrawYUVVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 815E8A6427F94E5D0004D542 /* DrawYUVVideoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8105D57027F54C98004A42B7 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = "../../../Lib/Pure-FFmpeg/lib"; sourceTree = "<group>"; };
-		8105D57127F54C98004A42B7 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = "../../../Lib/Pure-FFmpeg/include"; sourceTree = "<group>"; };
-		8105D59027F5E3E7004A42B7 /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tool.m; path = ../../../Tool/Tool.m; sourceTree = "<group>"; };
-		8105D59127F5E3E7004A42B7 /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tool.h; path = ../../../Tool/Tool.h; sourceTree = "<group>"; };
+		8105D5B427F7E2AE004A42B7 /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tool.h; path = ../../../Tool/Tool.h; sourceTree = "<group>"; };
+		8105D5B527F7E2AE004A42B7 /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tool.m; path = ../../../Tool/Tool.m; sourceTree = "<group>"; };
 		811E613F27C3CDC80036F285 /* RecordUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordUtil.h; sourceTree = "<group>"; };
 		811E614027C3CDC80036F285 /* RecordUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordUtil.m; sourceTree = "<group>"; };
-		811E614227C3CDD30036F285 /* PlayUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayUtil.h; sourceTree = "<group>"; };
-		811E614327C3CDD30036F285 /* PlayUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayUtil.m; sourceTree = "<group>"; };
 		8126964827C0A3EC00E7D8F8 /* Record.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Record.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8126964B27C0A3EC00E7D8F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8126964C27C0A3EC00E7D8F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +71,14 @@
 		8126969227C0CE8900E7D8F8 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = "FFmpeg-OC/Lib/lib/libswscale.a"; sourceTree = "<group>"; };
 		8126969F27C0D3DD00E7D8F8 /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libx264.a; path = "FFmpeg-OC/Lib/X264/lib/libx264.a"; sourceTree = "<group>"; };
 		812696A127C0D3E000E7D8F8 /* libfdk-aac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libfdk-aac.a"; path = "FFmpeg-OC/Lib/FDK-AAC/lib/libfdk-aac.a"; sourceTree = "<group>"; };
+		815E8A5827F94D760004D542 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = "../../../Lib/Pure-FFmpeg/include"; sourceTree = "<group>"; };
+		815E8A5927F94D760004D542 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = "../../../Lib/Pure-FFmpeg/lib"; sourceTree = "<group>"; };
+		815E8A5D27F94E480004D542 /* drawYUVFragment.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = drawYUVFragment.fsh; sourceTree = "<group>"; };
+		815E8A5E27F94E480004D542 /* drawYUVVertex.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = drawYUVVertex.vsh; sourceTree = "<group>"; };
+		815E8A6127F94E530004D542 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		815E8A6227F94E540004D542 /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		815E8A6427F94E5D0004D542 /* DrawYUVVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawYUVVideoView.m; sourceTree = "<group>"; };
+		815E8A6527F94E5D0004D542 /* DrawYUVVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawYUVVideoView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +126,9 @@
 		8126964A27C0A3EC00E7D8F8 /* Record */ = {
 			isa = PBXGroup;
 			children = (
-				81DA638F27C4F4600080B651 /* Tool */,
+				815E8A5C27F94E360004D542 /* Shader */,
 				8126966427C0A3F400E7D8F8 /* Lib */,
+				81DA638F27C4F4600080B651 /* Tool */,
 				8126964B27C0A3EC00E7D8F8 /* AppDelegate.h */,
 				8126964C27C0A3EC00E7D8F8 /* AppDelegate.m */,
 				8126964E27C0A3EC00E7D8F8 /* SceneDelegate.h */,
@@ -134,8 +142,10 @@
 				8126965D27C0A3ED00E7D8F8 /* main.m */,
 				811E613F27C3CDC80036F285 /* RecordUtil.h */,
 				811E614027C3CDC80036F285 /* RecordUtil.m */,
-				811E614227C3CDD30036F285 /* PlayUtil.h */,
-				811E614327C3CDD30036F285 /* PlayUtil.m */,
+				815E8A6127F94E530004D542 /* EAGLView.h */,
+				815E8A6227F94E540004D542 /* EAGLView.m */,
+				815E8A6527F94E5D0004D542 /* DrawYUVVideoView.h */,
+				815E8A6427F94E5D0004D542 /* DrawYUVVideoView.m */,
 			);
 			path = Record;
 			sourceTree = "<group>";
@@ -143,8 +153,8 @@
 		8126966427C0A3F400E7D8F8 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				8105D57127F54C98004A42B7 /* include */,
-				8105D57027F54C98004A42B7 /* lib */,
+				815E8A5827F94D760004D542 /* include */,
+				815E8A5927F94D760004D542 /* lib */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -172,11 +182,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		815E8A5C27F94E360004D542 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				815E8A5E27F94E480004D542 /* drawYUVVertex.vsh */,
+				815E8A5D27F94E480004D542 /* drawYUVFragment.fsh */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
 		81DA638F27C4F4600080B651 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				8105D59127F5E3E7004A42B7 /* Tool.h */,
-				8105D59027F5E3E7004A42B7 /* Tool.m */,
+				8105D5B427F7E2AE004A42B7 /* Tool.h */,
+				8105D5B527F7E2AE004A42B7 /* Tool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -239,10 +258,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8126965B27C0A3ED00E7D8F8 /* LaunchScreen.storyboard in Resources */,
+				815E8A5B27F94D760004D542 /* lib in Resources */,
 				8126965827C0A3ED00E7D8F8 /* Assets.xcassets in Resources */,
-				8105D57227F54C98004A42B7 /* lib in Resources */,
-				8105D57327F54C98004A42B7 /* include in Resources */,
 				8126965627C0A3EC00E7D8F8 /* Main.storyboard in Resources */,
+				815E8A5F27F94E480004D542 /* drawYUVFragment.fsh in Resources */,
+				815E8A5A27F94D760004D542 /* include in Resources */,
+				815E8A6027F94E480004D542 /* drawYUVVertex.vsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,10 +275,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8126965327C0A3EC00E7D8F8 /* ViewController.m in Sources */,
-				811E614427C3CDD30036F285 /* PlayUtil.m in Sources */,
-				8105D59227F5E3E7004A42B7 /* Tool.m in Sources */,
+				815E8A6627F94E5D0004D542 /* DrawYUVVideoView.m in Sources */,
 				8126964D27C0A3EC00E7D8F8 /* AppDelegate.m in Sources */,
 				8126965E27C0A3ED00E7D8F8 /* main.m in Sources */,
+				815E8A6327F94E540004D542 /* EAGLView.m in Sources */,
+				8105D5B627F7E2AE004A42B7 /* Tool.m in Sources */,
 				8126965027C0A3EC00E7D8F8 /* SceneDelegate.m in Sources */,
 				811E614127C3CDC80036F285 /* RecordUtil.m in Sources */,
 			);
@@ -405,12 +427,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TW3WW69AH2;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../Lib/Pure-FFmpeg/include\"";
 				INFOPLIST_FILE = Record/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Record & Play";
-				INFOPLIST_KEY_NSCameraUsageDescription = "申请使用摄像头进行拍摄";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "申请使用麦克风进行录音";
+				INFOPLIST_KEY_NSCameraUsageDescription = "访问相机";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "访问麦克风";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -450,12 +473,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TW3WW69AH2;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../Lib/Pure-FFmpeg/include\"";
 				INFOPLIST_FILE = Record/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Record & Play";
-				INFOPLIST_KEY_NSCameraUsageDescription = "申请使用摄像头进行拍摄";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "申请使用麦克风进行录音";
+				INFOPLIST_KEY_NSCameraUsageDescription = "访问相机";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "访问麦克风";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

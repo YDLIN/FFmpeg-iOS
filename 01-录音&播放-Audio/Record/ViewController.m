@@ -42,8 +42,4 @@
     [self.playUtil play];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    [self showDevice];
-}
-
 @end
