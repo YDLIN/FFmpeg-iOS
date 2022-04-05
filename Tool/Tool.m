@@ -67,13 +67,13 @@
     return pathString;
 }
 
-+ (NSString *)creatEncodeFilePath {
++ (NSString *)creatH264FilePath {
     NSDate *currentDate = [NSDate date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"MM_dd_hh_mm_ss"];
     NSString *dateString = [dateFormatter stringFromDate:currentDate];
     
-    NSString *pathString = [NSString stringWithFormat:@"%@/EncodeFiles", [Tool getLibraryCachesPath]];
+    NSString *pathString = [NSString stringWithFormat:@"%@/H264Files", [Tool getLibraryCachesPath]];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     //创建文件夹
     if(![fileManager fileExistsAtPath:pathString]) {
@@ -123,8 +123,9 @@
 /// 获取 H264 文件路径
 + (NSString *)fetchH264FilePath {
     NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSString *h264Component = [[Tool getLibraryCachesPath] stringByAppendingPathComponent:@"EncodeFiles"];
+    NSString *h264Component = [[Tool getLibraryCachesPath] stringByAppendingPathComponent:@"H264Files"];
     NSArray *files = [fileManager subpathsAtPath:h264Component] ;
+    files = [files sortedArrayUsingSelector:@selector(compare:)];
     NSString *h264FilePath = @"";
     for (int i = 0; i < files.count; i++) {
         NSString *filename = files[i];

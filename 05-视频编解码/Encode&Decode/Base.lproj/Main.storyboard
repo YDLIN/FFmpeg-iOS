@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YUV &amp; H264" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aze-RW-57M">
+                                <rect key="frame" x="20" y="30" width="335" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIa-nf-WaN">
+                                <rect key="frame" x="20" y="110" width="173" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="uWI-Th-94n"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Encode YUV">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="encodeBtnDidClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rHb-Bm-A1C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cip-tf-k5t">
+                                <rect key="frame" x="20" y="210" width="173" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="nkw-2C-bCS"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Decode H264">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="decodeDidClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yud-YQ-VU9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" ←点击编码YUV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6x-kX-2Q3">
+                                <rect key="frame" x="223" y="134.5" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" ←点击解码H264" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ec3-AB-Y83">
+                                <rect key="frame" x="223" y="234.5" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cip-tf-k5t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0ya-US-XtC"/>
+                            <constraint firstItem="ec3-AB-Y83" firstAttribute="leading" secondItem="cip-tf-k5t" secondAttribute="trailing" constant="30" id="2SR-ai-4SH"/>
+                            <constraint firstItem="cip-tf-k5t" firstAttribute="width" secondItem="eIa-nf-WaN" secondAttribute="width" id="3hj-pC-p9f"/>
+                            <constraint firstItem="cip-tf-k5t" firstAttribute="top" secondItem="eIa-nf-WaN" secondAttribute="bottom" constant="30" id="9u6-r2-Mnx"/>
+                            <constraint firstItem="eIa-nf-WaN" firstAttribute="top" secondItem="Aze-RW-57M" secondAttribute="bottom" constant="50" id="EWx-Mv-KB9"/>
+                            <constraint firstItem="L6x-kX-2Q3" firstAttribute="centerY" secondItem="eIa-nf-WaN" secondAttribute="centerY" id="H2C-14-MgU"/>
+                            <constraint firstItem="cip-tf-k5t" firstAttribute="height" secondItem="eIa-nf-WaN" secondAttribute="height" id="JN6-Fm-L0d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L6x-kX-2Q3" secondAttribute="trailing" constant="20" id="Rr9-cu-hbV"/>
+                            <constraint firstItem="Aze-RW-57M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Td6-8P-1oi"/>
+                            <constraint firstItem="ec3-AB-Y83" firstAttribute="centerY" secondItem="cip-tf-k5t" secondAttribute="centerY" id="Tz0-F5-0Re"/>
+                            <constraint firstItem="L6x-kX-2Q3" firstAttribute="leading" secondItem="eIa-nf-WaN" secondAttribute="trailing" constant="30" id="XBN-ha-yP4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Aze-RW-57M" secondAttribute="trailing" constant="20" id="Xav-V2-dC8"/>
+                            <constraint firstItem="Aze-RW-57M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="irv-Lo-zdV"/>
+                            <constraint firstItem="eIa-nf-WaN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jEe-4b-9kb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ec3-AB-Y83" secondAttribute="trailing" constant="20" id="ncu-pZ-s2O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="decodeBtn" destination="cip-tf-k5t" id="qfl-ph-V8m"/>
+                        <outlet property="encodeBtn" destination="eIa-nf-WaN" id="ggD-yX-DDR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.153846153846153" y="47.630331753554501"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

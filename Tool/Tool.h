@@ -16,6 +16,7 @@
 #import <libavcodec/avcodec.h>
 #import <libavfilter/avfilter.h>
 #import "libavutil/samplefmt.h"
+#import <libavutil/imgutils.h>
 
 #define ERROR_BUF(ret) \
     char errbuf[1024]; \
@@ -33,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// yuv 的存放路径及文件名
 + (NSString *)creatYUVDataFileName;
 /// 编码后的h264文件名路径
-+ (NSString *)creatEncodeFilePath;
++ (NSString *)creatH264FilePath;
 /// 获取 PCM 文件路径
 + (NSString *)fetchPCMFilePath;
 /// 获取 YUV 文件路径
